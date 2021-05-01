@@ -2,15 +2,12 @@
     <h1>Pitch</h1>
     <button style="margin: 10px;" (click)="startService()">Iniciar</button>
     <button style="margin: 10px;" (click)="stopService()">Parar</button>
-    
-    
-        <div>
-            <textarea [(ngModel)]='pitch.texto'>{{service.text}} ></textarea>
-       
-           
-                <button  type="submit" class="btn btn-danger" routerLink='/entrar'>Cancelar</button>
-                <button   type="submit" class="btn btn-success" (click)='salvar()'>Salvar</button>
-                    </div>
-     
-</div>
 
+
+    <div>
+
+        <h1>{{service.text}} </h1>
+
+        <button type="submit" class="btn btn-danger" routerLink='/entrar'>Cancelar</button>
+        <button type="submit" class="btn btn-success" (click)='salvar()'>Salvar</button>
+    </div>

@@ -22,7 +22,7 @@ export class AuthService {
     return this.http.post<User>('http://localhost:8080/usuarios/cadastrar', user)
   }
 
-  salvar(pitch: Pitch):Observable<Pitch>{
+  salvar(pitch: Pitch): Observable<Pitch>{
     return this.http.post<Pitch>('http://localhost:8080/pitch',pitch)
   }
 }

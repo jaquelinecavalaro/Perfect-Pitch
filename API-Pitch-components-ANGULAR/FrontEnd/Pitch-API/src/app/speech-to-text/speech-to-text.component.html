@@ -1,13 +1,14 @@
-<div style="margin: 100px;">
-    <h1>Pitch</h1>
-    <button style="margin: 10px;" (click)="startService()">Iniciar</button>
-    <button style="margin: 10px;" (click)="stopService()">Parar</button>
+<div style="margin-left: 600px;">
+    <h1>Perfect Pitch</h1>
+    <button style="margin-left: 30px;" (click)="startService()">Start</button>
+    <button style="margin-left: 40px;" (click)="stopService()">Stop</button>
+</div>
 
-
-    <div>
-        
-        <h1>{{service.text}} </h1>
-
-        <button type="submit" class="btn btn-danger" routerLink='/entrar'>Cancelar</button>
-        <button type="submit" class="btn btn-success" (click)='salvar()'>Salvar</button>
+<div class="container" style="margin-top: 40px; max-width:940px; max-height: 640px; margin-left: 0px;">
+    <div class="box">
+        <div class="content" style="align-items: center;">
+            <h2>Seu pitch</h2>
+            <p>{{service.text}}</p>
+        </div>
     </div>
+</div>

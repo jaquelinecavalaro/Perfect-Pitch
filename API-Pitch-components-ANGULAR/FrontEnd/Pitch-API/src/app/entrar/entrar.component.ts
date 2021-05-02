@@ -30,7 +30,7 @@ export class EntrarComponent implements OnInit {
       environment.nome = this.userLogin.nome
       environment.id = this.userLogin.id
 
-      this.router.navigate(['/inicio'])
+      this.router.navigate(['/speech-to-text'])
     }, erro =>{
       if(erro.status == 500){
         alert('Usuário ou senha estão incorretos!')

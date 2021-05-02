@@ -6,7 +6,7 @@ import { VoiceRecognitionService } from '../service/voice-recognition.service'
 @Component({
   selector: 'app-speech-to-text',
   templateUrl: './speech-to-text.component.html',
-  styleUrls: ['./speech-to-text.component.scss'],
+  styleUrls: ['./speech-to-text.component.css'],
   providers: [VoiceRecognitionService]
 })
 export class SpeechToTextComponent implements OnInit {

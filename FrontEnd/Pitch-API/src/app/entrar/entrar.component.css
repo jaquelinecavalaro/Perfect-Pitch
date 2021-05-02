@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+#img-bg{
+    background-image:url('https://i.imgur.com/IOvlz1m.png');
+    min-height: 621px;
+    min-width: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu{
+    background-color: #D9704A;
+}
+.entrarBox{
+    background-color: white;
+}
+.titleFont{
+   
+    font-size: 30;
+    color: #cf3700;
+    font-family: 'VT323', monospace;
+    
+}
+.cadastrar{
+    color: #cf3700;
+}
+.cadastrar:hover{
+    color: #21a700;
+}
+.btn-outline-dark{
+    background-color: #cf3700;
+    color: white;
+    border-color: white;
+}
+.btn-outline-dark:hover{
+    background-color: white;
+    color: #cf3700;
+    border-color: #cf3700;
+}
+.borda{
+    border-radius: 8%;
+   
+}

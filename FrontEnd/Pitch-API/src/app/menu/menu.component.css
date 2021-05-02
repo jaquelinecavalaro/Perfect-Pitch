@@ -1,0 +1,17 @@
+.fs-16{
+    font-size: 15pt;
+}
+a{
+    cursor: pointer;
+}
+.menuBar{
+    background-color: #F25D50;
+    color: white;
+}
+.fontText{
+color: white;
+
+}
+.fontText:hover{
+    color: #ffc7b1;
+}

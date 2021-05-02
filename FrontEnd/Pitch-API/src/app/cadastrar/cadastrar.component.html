@@ -1,16 +1,15 @@
 <div class="container-fluid">
 
-    <div class="row">
+    <div class="row d-flex align-items-center menu">
 
         <div class="col-md-6" id="img-bg"></div>
 
 
         <div class="col-md-6 mt-5 mb-5">
 
-            <div class="row d-flex justify-content-center">
-
-                <div class="col-md-10">
-                    <h1 class="text-center">Cadastro</h1>
+            <div class="row d-flex justify-content-center espaco">
+                <div class="col-md-7 entrarBox mb-5 mt-5 mr-5 ml-5 borda espaco">
+                    <h1 class="text-center titleFont">Cadastre-se</h1>
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
@@ -30,12 +29,12 @@
                             id="senha" placeholder="Sua senha">
                     </div>
 
-                    <div class="form-group">
-                        <label for="confirmSenha">Confirmar Senha</label>
+                    <div class="form-group mb-5">
+                        <label for="confirmSenha ">Confirmar Senha</label>
                         <input [(ngModel)]='user.senha' class="form-control" type="password" name="confirmSenha"
                             id="confirmSenha" placeholder="Confirme sua senha">
                     </div>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center mb-5">
                         <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
                         <button type="submit" class="btn btn-success" (click)='cadastrar()'>Cadastrar</button>
                     </div>

@@ -23,17 +23,10 @@ export class SpeechToTextComponent implements OnInit {
   ngOnInit(): void{
    
   }
-
-  salvar()
-  {
-    this.authService.salvar(this.pitch).subscribe((resp:Pitch)=>{
-      this.pitch=resp
-      alert('pitch salvo com sucesso!')
-    })
-  }
-
+ 
   startService(){
-    this.service.start()
+    this.service.start(),
+    alert
   }
 
   stopService(){
@@ -42,5 +35,3 @@ export class SpeechToTextComponent implements OnInit {
 
   
 }
-
-

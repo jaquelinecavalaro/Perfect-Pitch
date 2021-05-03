@@ -8,7 +8,7 @@ import { SpeechToTextComponent } from './speech-to-text/speech-to-text.component
 
 const routes: Routes = [
 
-  {path: '', redirectTo: 'entrar', pathMatch: 'full'},
+  {path: '', redirectTo: 'inicio', pathMatch: 'full'},
   {path:'speech-to-text', component: SpeechToTextComponent},
   {path:'entrar', component: EntrarComponent},
   {path: 'cadastrar', component: CadastrarComponent},

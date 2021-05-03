@@ -21,9 +21,11 @@
     "@angular/router": "~10.0.5",
     "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
+    "light-validate": "^1.0.7",
     "ngx-bootstrap": "^6.2.0",
     "ngx-order-pipe": "^2.1.1",
     "popper.js": "^1.16.1",
+    "reflect-metadata": "^0.1.13",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"

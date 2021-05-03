@@ -26,3 +26,4 @@ export class AuthService {
     return this.http.post<Pitch>('http://localhost:8080/pitch',pitch)
   }
 }
+

@@ -1,3 +1,4 @@
+import{LightRule} from 'light-validate';
 import { AuthService } from './../service/auth.service';
 import { UserLogin } from './../model/UserLogin';
 import { Component, OnInit } from '@angular/core';
@@ -9,6 +10,8 @@ import { Router } from '@angular/router';
   templateUrl: './cadastrar.component.html',
   styleUrls: ['./cadastrar.component.css']
 })
+
+
 export class CadastrarComponent implements OnInit {
 
   user: User = new User
@@ -27,9 +30,6 @@ export class CadastrarComponent implements OnInit {
   confirmSenha(event: any) {
     this.confirmarSenha = event.target.value
   }
-
- 
-
   cadastrar(){
       if(this.user.senha != this.confirmarSenha){
       alert('A senhas estão incorretas.')
@@ -42,6 +42,5 @@ export class CadastrarComponent implements OnInit {
     }
 
   }
-
 
 }

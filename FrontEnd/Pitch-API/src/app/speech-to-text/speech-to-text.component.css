@@ -75,3 +75,13 @@
         color: white;
         
         } 
+        .btn-historico{
+                background-color: #f19777;
+                color: white;
+                border-color: white;
+            }
+            .btn-historico:hover{
+                background-color: white;
+                color: #f19777;
+                border-color: #f19777;
+            }

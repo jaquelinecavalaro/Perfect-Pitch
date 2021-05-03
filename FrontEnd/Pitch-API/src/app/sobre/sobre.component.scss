@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+#img-bg{
+    background-image: url('https://i.imgur.com/BEPGLx9.png');
+    min-height: 695px;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.menu{
+    background-color: #D9704A;
+}
+.titleFont{
+   
+    font-size: 30;
+    color: white;
+    font-family: 'VT323', monospace;
+    
+}
+.colorFont{
+    color:aliceblue;
+    
+}
+.btn-outline-success{
+    background-color: white;
+    border-color: #a63fbd;
+    color: #a63fbd;
+}
+.btn-outline-success:hover{
+    background-color: #a63fbd;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+}
+.btn-outline-danger{
+    background-color: white;
+    border-color: #cf2f64;
+    color: #cf2f64;
+}
+.btn-outline-danger:hover{
+    background-color: #cf2f64;
+    border-color: white;
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42); 
+box-shadow: 0px 10px 13px -7px #000000, 0px 0px 47px -6px rgba(54,30,60,0.42);
+}
+.paragrafoFont{
+   
+    font-size: 40;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.hr{
+   
+    background-color: white;
+}
+.corLetrasRodaPe{
+    color:white;
+ }
+ .iconLetra:hover{
+color: #fab2b8;
+ }
+
+ li{
+    display: inline;
+    margin: 0;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.corLetrasRodaPe{
+    color:white;
+ }
+ .iconLetra:hover{
+color: #F24B59;
+ }

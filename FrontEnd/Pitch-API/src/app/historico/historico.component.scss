@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+.fundo{
+    background-color: #D9704A;
+}
+.titleFont{
+   
+    font-size: 30;
+    color: white;
+    font-family: 'VT323', monospace;
+    
+}
+.btn-outline-dark{
+    background-color: #cf3700;
+    color: white;
+    border-color: white;
+}
+.btn-outline-dark:hover{
+    background-color: white;
+    color: #cf3700;
+    border-color: #cf3700;
+}
+.btn-color{
+    background-color: white;
+    color: #cf3700;
+    border-color: #cf3700;
+}
+.btn-color:hover{
+    
+    background-color: #cf3700;
+    color: white;
+    border-color: white;
+    
+}

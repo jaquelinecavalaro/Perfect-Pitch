@@ -28,6 +28,6 @@ public class SwaggerConfig {
 	}
 
 	private Contact contact() {
-		return new Contact("Wellington Bezerra", "https://github.com/WellingtonSB", "Full-Stack Developer Jr ");
+		return new Contact("Wellington Bezerra & Jaqueline Cavalaro", "https://www.linkedin.com/in/wellingtonsb/  & https://www.linkedin.com/in/jaqueline-cavalaro/", "Full-Stack Developer Jr ");
 	}
 }

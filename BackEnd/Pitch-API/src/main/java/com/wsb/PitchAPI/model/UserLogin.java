@@ -1,8 +1,9 @@
 package com.wsb.PitchAPI.model;
 
-
 public class UserLogin {
-
+	
+	private long id;
+	
 	private String nome;
 
 	private String usuario;
@@ -43,4 +44,12 @@ public class UserLogin {
 		this.token = token;
 	}
 
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+	
 }

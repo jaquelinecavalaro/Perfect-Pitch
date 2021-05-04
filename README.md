@@ -29,3 +29,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [x] Atualização de cadastro.
 - [x] Criação de Get | Put | Delete.
 - [x] Deploy.
+
+### Gostou do projeto? Deixe uma estrela!

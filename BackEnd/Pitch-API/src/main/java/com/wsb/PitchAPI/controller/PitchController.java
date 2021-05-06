@@ -31,6 +31,11 @@ public class PitchController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
+	@GetMapping("/{id}")
+	public ResponseEntity<Pitch> GetById(@PathVariable long id){
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}	
+	
 	@GetMapping("/texto/{texto}")
 	public ResponseEntity<List<Pitch>> GetByTitulo(@PathVariable String texto){
 		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(texto));

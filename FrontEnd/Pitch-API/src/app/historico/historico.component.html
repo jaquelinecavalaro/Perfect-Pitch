@@ -24,17 +24,18 @@
                         <thead>
                           <tr>
                             <th scope="col">id</th>
-                            <th scope="col">Texto</th>
+                            <th scope="col">Tema</th>
                             <th scope="col">Data</th>
                            </tr>
                         </thead>
                         <tbody>
                           <tr *ngFor='let pitch of listaPitchs'>
                             <th>{{pitch.id}}</th>
-                            <td>{{pitch.texto}}</td>
+                            <td>{{pitch.tema}}</td>
                             <td>{{pitch.data}}</td>
                           </tr>
                         </tbody>
+
                       </table>
                  </div>
             </div>

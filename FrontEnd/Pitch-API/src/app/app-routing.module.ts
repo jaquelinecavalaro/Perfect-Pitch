@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'menu',component:MenuComponent},
   {path: 'sobre', component:SobreComponent},
-  {path: 'historico', component:HistoricoComponent}
+  {path: 'historico/:id', component:HistoricoComponent}
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Pitch } from '../model/Pitch';
 import { PitchServiceService } from '../service/pitch-service.service';
 import { environment } from './../../environments/environment.prod';
@@ -11,16 +11,25 @@ import { environment } from './../../environments/environment.prod';
 })
 export class HistoricoComponent implements OnInit {
 
-  pitch:Pitch = new Pitch()
+  pitch: Pitch = new Pitch()
   listaPitchs: Pitch[]
 
   constructor(
-    private router:Router,
-    private pitchService:PitchServiceService
+    private router: Router,
+    private pitchService:PitchServiceService,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
     this.findAllPitch()
+    let id = this.route.snapshot.params['id']
+    this.findById(id)
+  }
+
+  findById(id: number){
+    this.pitchService.getByIdPitch(id).subscribe((resp: Pitch)=>{
+      this.pitch = resp
+    })
   }
 
   findAllPitch(){
@@ -29,6 +38,9 @@ export class HistoricoComponent implements OnInit {
       console.log(this.listaPitchs)
     })
   }
+
+ 
+
 
 
 }

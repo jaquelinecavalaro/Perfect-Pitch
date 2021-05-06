@@ -18,10 +18,32 @@
                     </form>
                 </div>
             </div>
+            <div class="box ">
+                <div class="content" style="align-items: center;">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">id</th>
+                            <th scope="col">Texto</th>
+                            <th scope="col">Data</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor='let pitch of listaPitchs'>
+                            <th>{{pitch.id}}</th>
+                            <td>{{pitch.texto}}</td>
+                            <td>{{pitch.data}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                 </div>
+            </div>
             <div class="row container">
                 <div class="col-md-12 justify-content-center text-center d-flex mb-5">
-                <button class="btn my-2 my-sm-0 btn-color text-center" type="submit " routerLink='/speech-to-text'>Retornar para o Pitch</button>
+                    <button class="btn my-2 my-sm-0 btn-color text-center" type="submit "
+                        routerLink='/speech-to-text'>Retornar para o Pitch</button>
+                </div>
             </div>
-        </div></div>
+        </div>
     </div>
 </div>

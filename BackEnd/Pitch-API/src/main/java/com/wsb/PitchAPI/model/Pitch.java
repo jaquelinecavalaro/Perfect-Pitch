@@ -11,6 +11,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
@@ -22,12 +23,14 @@ public class Pitch {
 	private long id;
 		
 	@Temporal(TemporalType.TIMESTAMP)
+	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
 	private Date data = new java.sql.Date(System.currentTimeMillis());
+	
 	
 	private String texto;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Pitch")
+	@JsonIgnoreProperties("pitch")
 	private Usuario usuario;
 
 	public long getId() {

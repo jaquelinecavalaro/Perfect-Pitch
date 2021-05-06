@@ -38,7 +38,7 @@ public class Usuario {
 
 
 	@OneToMany(mappedBy="usuario",cascade = CascadeType.REMOVE)
-	@JsonIgnoreProperties("Usuario")
+	@JsonIgnoreProperties("usuario")
 	private List<Pitch>pitch;
 	
 	public long getId() {

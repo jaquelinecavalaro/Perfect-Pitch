@@ -20,12 +20,13 @@
             </div>
             <div class="box ">
                 <div class="content" style="align-items: center;">
-                    <table class="table table-hover">
+                    <table class="table table-bordered">
                         <thead>
                           <tr>
                             <th scope="col">id</th>
                             <th scope="col">Tema</th>
                             <th scope="col">Data</th>
+                            <th scope="col">Editar/Apagar</th>
                            </tr>
                         </thead>
                         <tbody>
@@ -33,6 +34,10 @@
                             <th>{{pitch.id}}</th>
                             <td>{{pitch.tema}}</td>
                             <td>{{pitch.data}}</td>
+                            <td class="d-flex justify-content-start">
+                                <button class="btn btn-info mr-3" [routerLink]="['/pitch-edit', pitch.id]" >Editar</button>
+                                <button class="btn btn-danger" [routerLink]="['/pitch-delete', pitch.id]" >Apagar</button>
+                              </td>
                           </tr>
                         </tbody>
 

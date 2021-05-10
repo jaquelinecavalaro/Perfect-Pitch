@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { SpeechToTextComponent } from './speech-to-text/speech-to-text.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { HistoricoComponent } from './historico/historico.component';
+import { PitchEditComponent } from './edit/pitch-edit/pitch-edit.component';
+import { PitchDeleteComponent } from './delete/pitch-delete/pitch-delete.component';
 
 const routes: Routes = [
 
@@ -17,7 +19,9 @@ const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'menu',component:MenuComponent},
   {path: 'sobre', component:SobreComponent},
-  {path: 'historico/:id', component:HistoricoComponent}
+  {path: 'historico', component:HistoricoComponent},
+  {path: 'pitch-edit/:id',component:PitchEditComponent},
+  {path: 'pitch-delete/:id',component:PitchDeleteComponent}
 ];
 
 @NgModule({

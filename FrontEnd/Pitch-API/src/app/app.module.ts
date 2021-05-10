@@ -14,6 +14,7 @@ import { HistoricoComponent } from './historico/historico.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { PitchEditComponent } from './edit/pitch-edit/pitch-edit.component';
 import { PitchDeleteComponent } from './delete/pitch-delete/pitch-delete.component';
+import { LeituraComponent } from './leitura/leitura.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PitchDeleteComponent } from './delete/pitch-delete/pitch-delete.compone
     HistoricoComponent,
     SobreComponent,
     PitchEditComponent,
-    PitchDeleteComponent
+    PitchDeleteComponent,
+    LeituraComponent
   ],
   imports: [
     BrowserModule,

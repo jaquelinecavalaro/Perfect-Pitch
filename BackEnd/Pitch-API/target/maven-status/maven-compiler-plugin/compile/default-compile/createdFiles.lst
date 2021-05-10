@@ -1,0 +1,13 @@
+com\wsb\PitchAPI\CadastroFuncionariosApplication.class
+com\wsb\PitchAPI\Swagger\SwaggerConfig.class
+com\wsb\PitchAPI\security\UserDetailsServiceImpl.class
+com\wsb\PitchAPI\model\Usuario.class
+com\wsb\PitchAPI\security\BasicSecurityConfig.class
+com\wsb\PitchAPI\service\UsuarioService.class
+com\wsb\PitchAPI\model\Pitch.class
+com\wsb\PitchAPI\repository\UsuarioRepository.class
+com\wsb\PitchAPI\controller\PitchController.class
+com\wsb\PitchAPI\repository\PitchRepository.class
+com\wsb\PitchAPI\controller\UsuarioController.class
+com\wsb\PitchAPI\security\UserDetailsImpl.class
+com\wsb\PitchAPI\model\UserLogin.class

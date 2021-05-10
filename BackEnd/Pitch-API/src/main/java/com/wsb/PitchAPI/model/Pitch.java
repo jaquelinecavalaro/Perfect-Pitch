@@ -26,7 +26,7 @@ public class Pitch {
 	private long id;
 		
 	@Temporal(TemporalType.TIMESTAMP)
-	@JsonFormat(pattern = "dd-MM-yyyy HH:mm:ss")
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	private Date data = new java.sql.Date(System.currentTimeMillis());
 	
 	@NotNull

@@ -41,14 +41,12 @@ public class PitchController {
 		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(texto));
 	}
 	
-<<<<<<< HEAD
-=======
+
 	@GetMapping("/titulo/{titulo}")
 	public ResponseEntity<List<Pitch>> GetByTitulo(@PathVariable String titulo){
 		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(titulo));
 	}
->>>>>>> 94bacbcb374d47c8712a03c4a8c41a57811d0458
-	
+
 	@PostMapping
 	public ResponseEntity<Pitch> post (@RequestBody Pitch texto){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(texto));

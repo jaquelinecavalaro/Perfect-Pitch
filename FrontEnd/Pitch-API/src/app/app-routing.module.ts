@@ -9,6 +9,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { HistoricoComponent } from './historico/historico.component';
 import { PitchEditComponent } from './edit/pitch-edit/pitch-edit.component';
 import { PitchDeleteComponent } from './delete/pitch-delete/pitch-delete.component';
+import { LeituraComponent } from './leitura/leitura.component';
 
 const routes: Routes = [
 
@@ -20,8 +21,10 @@ const routes: Routes = [
   {path: 'menu',component:MenuComponent},
   {path: 'sobre', component:SobreComponent},
   {path: 'historico', component:HistoricoComponent},
+  {path: 'leitura/:id', component:LeituraComponent},
   {path: 'pitch-edit/:id',component:PitchEditComponent},
   {path: 'pitch-delete/:id',component:PitchDeleteComponent}
+
 ];
 
 @NgModule({

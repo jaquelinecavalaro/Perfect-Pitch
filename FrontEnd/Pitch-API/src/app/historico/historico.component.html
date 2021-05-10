@@ -36,7 +36,8 @@
                             <td>{{pitch.data}}</td>
                             <td class="d-flex justify-content-start">
                                 <button class="btn btn-info mr-3" [routerLink]="['/pitch-edit', pitch.id]" >Editar</button>
-                                <button class="btn btn-danger" [routerLink]="['/pitch-delete', pitch.id]" >Apagar</button>
+                                <button class="btn btn-danger mr-3" [routerLink]="['/pitch-delete', pitch.id]" >Apagar</button>
+                                <button class="btn btn-success" [routerLink]="['/leitura', pitch.id]" >Leitura</button>
                               </td>
                           </tr>
                         </tbody>

@@ -14,13 +14,14 @@
                     <div>
                         <div class="content fontText">
                             <h5>Seu pitch irá aparecer aqui conforme você fala:</h5>
+                            <input [(ngModel)]='pitch.tema' class="form-control mr-sm-2 mt-3 mb-3" type="text" placeholder="Titulo do Pitch" aria-label="titulo">
                             <div class="box">
                                 <div class="content" style="align-items: center;">
                                     <p>{{service.text}}</p>   
                                 </div>
                             </div>
                             <button class="btn-final btn mt-3 mb-3 ml-5 mr-5" (click)='salvar()'>salvar</button>
-                            <button class="btn-inicio btn mt-3 mb-3 ml-5 mr-5" routerLink='/historico' >Histórico</button>
+                            <button class="btn-inicio btn mt-3 mb-3 ml-5 mr-5" routerLink='/historico'>Histórico</button>
                         </div>
                     </div>
                 </div>

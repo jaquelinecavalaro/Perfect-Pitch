@@ -24,23 +24,25 @@ export class SpeechToTextComponent implements OnInit {
     this.service.init()
    }
 
-  ngOnInit():void{
+  ngOnInit(){
    
   }
  salvar(){
-    this.pitch.texto=this.service.text
-    this.user.id = environment.id
-    this.pitch.usuario=this.user
-     this.authService.salvar(this.pitch).subscribe((resp)=>{
-      this.pitch=resp
-      alert('Pitch salvo com sucesso!')
-    },
-    erro => {
-      if (erro.status == 500) {
-        alert('voce deve estar logado para rsalvar o seu pitch')
-      }
-    }) 
-  }
+      this.pitch.texto=this.service.text
+      this.user.id = environment.id
+      this.pitch.usuario=this.user
+       this.authService.salvar(this.pitch).subscribe((resp)=>{
+        this.pitch=resp
+        alert('Pitch salvo com sucesso!')
+      },
+      erro => {
+        if (erro.status == 500) {
+          alert('Seu titulo deve estar preenchido!')
+        }
+      }) 
+    }
+
+
   startService(){
     this.service.start(),
     alert

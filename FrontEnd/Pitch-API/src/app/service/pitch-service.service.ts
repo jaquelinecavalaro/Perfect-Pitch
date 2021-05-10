@@ -12,12 +12,13 @@ export class PitchServiceService {
   constructor(private http:HttpClient) { }
   token = {headers:new HttpHeaders().set('Authorization', environment.token)}
 
-getAllPitch():Observable<Pitch[]>{
-return this.http.get<Pitch[]>('http://localhost:8080/pitch',this.token)
+getAllPitch(): Observable<Pitch[]>{
+return this.http.get<Pitch[]>('http://localhost:8080/pitch', this.token)
 }
 
-getByIdPitch(id:number):Observable<Pitch>{
-  return this.http.get<Pitch>(`http://localhost:8080/pitch/${id}`,this.token)
+getByIdPitch(id:number): Observable<Pitch>{
+  return this.http.get<Pitch>(`http://localhost:8080/pitch/${id}`, this.token)
 }
+
 
 }

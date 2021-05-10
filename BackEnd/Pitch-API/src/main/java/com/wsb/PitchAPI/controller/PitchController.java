@@ -41,6 +41,7 @@ public class PitchController {
 		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(texto));
 	}
 	
+	
 	@PostMapping
 	public ResponseEntity<Pitch> post (@RequestBody Pitch texto){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(texto));

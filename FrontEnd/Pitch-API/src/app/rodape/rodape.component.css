@@ -1,24 +1,22 @@
-.backgroundRodape{
-    background-color: #ffc7b1;
-}
-ul.socialNetwork{
-    list-style: none;
+ul.social-network{
+    list-style:none;
     padding: 0;
 }
-
-ul.socialNetwork li{
+ul.social-network li{
     display: inline;
     margin: 0;
-    padding: 5px;
-    font-size: 24px;
+    padding: 10px;
+}
+.fa{
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
 }
 
-.corLetrasRodaPe{
-    color:white;
- }
- .iconLetra:hover{
-color: #F24B59;
- }
-.backgroundCopy{
-    background-color: #F25D50;
+.fa-linkedin-square:hover{
+    color: rgb(177, 108, 19);
+}
+
+.fa-github:hover{
+    color: rgb(177, 108, 19);
 }

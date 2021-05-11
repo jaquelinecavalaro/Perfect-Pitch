@@ -12,6 +12,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { HistoricoComponent } from './historico/historico.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { PitchEditComponent } from './edit/pitch-edit/pitch-edit.component';
+import { PitchDeleteComponent } from './delete/pitch-delete/pitch-delete.component';
+import { LeituraComponent } from './leitura/leitura.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { SobreComponent } from './sobre/sobre.component';
     CadastrarComponent,
     InicioComponent,
     HistoricoComponent,
-    SobreComponent
+    SobreComponent,
+    PitchEditComponent,
+    PitchDeleteComponent,
+    LeituraComponent
   ],
   imports: [
     BrowserModule,

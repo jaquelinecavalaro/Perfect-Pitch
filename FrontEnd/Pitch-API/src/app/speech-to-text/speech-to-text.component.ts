@@ -19,6 +19,7 @@ export class SpeechToTextComponent implements OnInit {
   constructor(
     public service : VoiceRecognitionService,
     private authService:AuthService
+    
   ) { 
     this.service.init()
    }
@@ -26,19 +27,22 @@ export class SpeechToTextComponent implements OnInit {
   ngOnInit(){
    
   }
+ salvar(){
+      this.pitch.texto=this.service.text
+      this.user.id = environment.id
+      this.pitch.usuario=this.user
+       this.authService.salvar(this.pitch).subscribe((resp)=>{
+        this.pitch=resp
+        alert('Pitch salvo com sucesso!')
+      },
+      erro => {
+        if (erro.status == 500) {
+          alert('Seu titulo deve estar preenchido!')
+        }
+      }) 
+    }
 
-  salvar(){
-    this.pitch.texto=this.service.text
-    this.user.id = environment.id
-    this.pitch.usuario=this.user
-     this.authService.salvar(this.pitch).subscribe((resp)=>{
-      this.pitch=resp
-      alert('foi!')
-    }) 
-  }
 
-
- 
   startService(){
     this.service.start(),
     alert
@@ -48,5 +52,6 @@ export class SpeechToTextComponent implements OnInit {
     this.service.stop()
   }
 
+ 
   
 }

@@ -5,22 +5,23 @@
                 <h4>Clique em Iniciar para começar a treinar seu Pitch</h4>
                 <button class="btn-inicio btn ml-5 mr-5" (click)="startService()">Start</button>
                 <button class="btn btn-final mr-5 ml-5" (click)="stopService()">Stop</button>
+                
             </div>
-
+            
 
             <div class="row justify-content-center text-center ">
                 <div class="col-md-12">
                     <div>
                         <div class="content fontText">
                             <h5>Seu pitch irá aparecer aqui conforme você fala:</h5>
+                            <input [(ngModel)]='pitch.tema' class="form-control mr-sm-2 mt-3 mb-3" type="text" placeholder="Titulo do Pitch" aria-label="titulo">
                             <div class="box">
                                 <div class="content" style="align-items: center;">
-                                    <p>{{service.text}}</p>
-                                    
+                                    <p>{{service.text}}</p>   
                                 </div>
                             </div>
                             <button class="btn-final btn mt-3 mb-3 ml-5 mr-5" (click)='salvar()'>salvar</button>
-                            <button class="btn-inicio btn mt-3 mb-3 ml-5 mr-5" routerLink='/historico' >Histórico</button>
+                            <button class="btn-inicio btn mt-3 mb-3 ml-5 mr-5" routerLink='/historico'>Histórico</button>
                         </div>
                     </div>
                 </div>

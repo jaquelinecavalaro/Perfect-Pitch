@@ -10,24 +10,33 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 @Table(name="Pitch")
 public class Pitch {
-
+	 
+//VE SE FOI JAQUELINE
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
 	private long id;
 		
 	@Temporal(TemporalType.TIMESTAMP)
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
 	private Date data = new java.sql.Date(System.currentTimeMillis());
+	
+	@NotNull
+	@Size(max = 50 )
+	private String tema;
 	
 	private String texto;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Pitch")
+	@JsonIgnoreProperties("pitch")
 	private Usuario usuario;
 
 	public long getId() {
@@ -46,6 +55,14 @@ public class Pitch {
 		this.data = data;
 	}
 
+	public String getTema() {
+		return tema;
+	}
+
+	public void setTema(String tema) {
+		this.tema = tema;
+	}
+
 	public String getTexto() {
 		return texto;
 	}
@@ -61,8 +78,6 @@ public class Pitch {
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
 	}
-	
-	
-	
+
 	
 }

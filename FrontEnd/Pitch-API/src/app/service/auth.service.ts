@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { User } from '../model/User';
 import { Pitch } from '../model/Pitch';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -25,5 +26,6 @@ export class AuthService {
   salvar(pitch: Pitch): Observable<Pitch>{
     return this.http.post<Pitch>('http://localhost:8080/pitch',pitch)
   }
+
 }
 

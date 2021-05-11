@@ -31,11 +31,22 @@ public class PitchController {
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
+	@GetMapping("/{id}")
+	public ResponseEntity<Pitch> GetById(@PathVariable long id){
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}	
+	
 	@GetMapping("/texto/{texto}")
-	public ResponseEntity<List<Pitch>> GetByTitulo(@PathVariable String texto){
+	public ResponseEntity<List<Pitch>> GetByTexto(@PathVariable String texto){
 		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(texto));
 	}
 	
+
+	@GetMapping("/titulo/{titulo}")
+	public ResponseEntity<List<Pitch>> GetByTitulo(@PathVariable String titulo){
+		return ResponseEntity.ok(repository.findAllByTextoContainingIgnoreCase(titulo));
+	}
+
 	@PostMapping
 	public ResponseEntity<Pitch> post (@RequestBody Pitch texto){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(texto));

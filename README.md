@@ -27,7 +27,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ### Features
 - [x] Atualização de cadastro.
-- [x] Criação de Get | Put | Delete.
-- [x] Deploy.
+- [x] Cronometro.
+- [x] melhorias no âmbito de responsividade.
+- [x] atualizações de cadastro por parte do usuario
+
 
 ### Gostou do projeto? Deixe uma estrela!
